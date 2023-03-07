@@ -9,6 +9,19 @@
 
 ## <h2 align="left"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
 
+```
+create table alumnos(
+   dni char(9) constraint alumnos_pk primary key,  
+   nombre varchar(50) constraint alumnos_nn1 not null,  
+   apellido1 varchar(50) constraint alumnos_nn2 not null,  
+   apellido2 varchar(50) constraint alumnos_nn3 not null,  
+   direccion varchar(50),  
+   telefono char(9),  
+   edad number(2),  
+   cif char(9) constraint alumnos_fk references empresas  
+          on delete set null);  
+```
+
 <p align="justify">
   El código que puedes observar en pantalla se utiliza para crear una tabla con el nombre de “alumnos” en una base de datos que tenemos en clase. La tabla “alumnos” contiene toda la información sobre los estudiantes del ficticio centro donde también se incluirán el DNI, nombre y apellidos, dirección y teléfono, la edad y el CIF de la empresa a la que el alumno este asociado.
 </p>
@@ -47,28 +60,31 @@ direccion varchar(50);
 ```
 
 <p align="justify">
-  Hola Mundo
+  En el sexto campo de nuestro código de SQL aparece el campo llamado como “teléfono” declarado como todos los anteriores como como un carácter (char) con una longitud máxima de 9 caracteres. Al igual que el campo "dirección", este campo no se define como no nulo (not null) con lo que también te permite dejar este campo sin rellenar.
 </p>
 
 ```
-create table alumnos(
-   dni char(9) constraint alumnos_pk primary key,  
-   nombre varchar(50) constraint alumnos_nn1 not null,  
-   apellido1 varchar(50) constraint alumnos_nn2 not null,  
-   apellido2 varchar(50) constraint alumnos_nn3 not null,  
-   direccion varchar(50),  
-   telefono char(9),  
-   edad number(2),  
+telefono char(9);
+```
+
+<p align="justify">
+  En el séptimo campo llamado “edad”, que es declarado con la función (number) de número con una longitud máxima de 2 caracteres e igual que los dos anteriores campos este campo también permite el dejarle en blanco.
+</p>
+
+```
+edad number(2);
+```
+
+<p align="justify">
+  El octavo y último campo es el campo llamado "cif", que se declara como un carácter (char) con una longitud máxima de 9 caracteres. Este campo es definido como clave externa (foreign key) y este hace referencia a la tabla "empresas", lo que significa que cada valor en este campo debe coincidir con un valor ya existente en la tabla de "empresas" de la base de datos. Además, se especifica la acción a tomar en caso de que se elimine un registro de la tabla "empresas": en este caso, se establecerá el valor del campo "cif" en nulo (null) para todos los registros en la tabla "alumnos" que hagan referencia a ese registro eliminado de la base de datos.
+</p>
+
+``` 
    cif char(9) constraint alumnos_fk references empresas  
-          on delete set null  
-);  
+          on delete set null;  
 ```
 
 ## <h2 align="left"><strong>CONSULTA <em>INSERT INTO</em></strong></h2>
-
-<p align="justify">
-    Vestibulum vitae lorem elementum, commodo risus quis, posuere arcu. Suspendisse imperdiet est at erat elementum, vitae laoreet erat consequat. Quisque hendrerit, erat nec porta scelerisque, risus neque tristique lorem, eu molestie mi magna sit amet tortor. Maecenas eget sodales dui. Nullam dapibus, augue vel varius gravida, nunc felis iaculis mi, vel vehicula libero sem quis velit. Ut magna erat, iaculis vitae ligula porta, laoreet faucibus magna. Aliquam erat volutpat. Aenean vel massa accumsan sem iaculis elementum et eget mi. Cras dictum sem mi, in mollis neque placerat non. Fusce ac orci ac nunc tristique tristique iaculis in lectus. In volutpat sollicitudin quam vel sagittis.
-</p>
 
 ```
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('INFOR031', 'Linux II', 90, null, null);  
@@ -78,6 +94,73 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR011', 'Programación PL/SQL', 110, null, null);  
 );    
   ```
+
+<p align="justify">
+    Vestibulum vitae lorem elementum, commodo risus quis, posuere arcu. Suspendisse imperdiet est at erat elementum, vitae laoreet erat consequat. Quisque hendrerit, erat nec porta scelerisque, risus neque tristique lorem, eu molestie mi magna sit amet tortor. Maecenas eget sodales dui. Nullam dapibus, augue vel varius gravida, nunc felis iaculis mi, vel vehicula libero sem quis velit. Ut magna erat, iaculis vitae ligula porta, laoreet faucibus magna. Aliquam erat volutpat. Aenean vel massa accumsan sem iaculis elementum et eget mi. Cras dictum sem mi, in mollis neque placerat non. Fusce ac orci ac nunc tristique tristique iaculis in lectus. In volutpat sollicitudin quam vel sagittis.
+</p>
+
+<p align="justify">
+  Hola Mundo.
+</p>
+
+<p align="justify">
+  Hola Mundo.
+</p>
+
+<p align="left">
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+</p>
+
+<p align="justify">
+  Hola Mundo.
+</p>
+
+<p align="left">
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+</p>
+
+<p align="justify">
+  Hola Mundo.
+</p>
+
+<p align="left">
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+</p>
+
+<p align="justify">
+  Hola Mundo.
+</p>
+
+<p align="left">
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+</p>
+
+<p align="justify">
+  Hola Mundo.
+</p>
+
+<p align="left">
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+  * Hola Mundo.  
+</p>
+
+<p align="justify">
+  Hola Mundo Resumido.
+</p>
 
 ## <h2 align="left"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
 
