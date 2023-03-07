@@ -22,7 +22,24 @@
 ```
 
 <p align="justify">
-  lorem
+  El segundo campo llamado “nombre”, se declara como una cadena de caracteres como el anterior (varchar) solo que ahora la longitud máxima cambia ligeramente a 50 caracteres, a parte de esto este campo se define como no nulo (not null), con lo que este campo es obligatorio siempre que se haga un registro en la base de datos.
+</p>
+
+```
+nombre varchar(50) constraint alumnos_nn1 not null;
+```
+
+<p align="justify">
+  El tercer y cuarto campo podemos observar que hacen referencia a los apellidos, al “apellido1” y al “apellido2”, estos campos, como los anteriores ya mencionados son declarados como cadenas de caracteres con una longitud máxima de 50 caracteres y también se definen como no nulos.
+</p>
+
+```
+apellido1 varchar(50) constraint alumnos_nn2 not null,  
+apellido2 varchar(50) constraint alumnos_nn3 not null;
+```
+
+<p align="justify">
+  Hola mundo.
 </p>
 
 ```
