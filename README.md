@@ -10,7 +10,19 @@
 ## <h2 align="center"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
 
 <p align="justify">
-    Phasellus pharetra, nulla tristique vulputate mattis, nisi felis suscipit libero, sit amet tincidunt nisi libero viverra magna. In at eros in nunc pulvinar convallis ultricies vel risus. Aenean eu mi augue. Nam congue consequat ante, quis fringilla nunc luctus a. Proin a aliquet nisi. Praesent accumsan pharetra consectetur. Donec imperdiet ante nec aliquam porttitor. Etiam felis dui, cursus tincidunt mollis dignissim, porta sed diam. Ut in libero vel mi maximus rhoncus sed eget sapien. Nam ac nisl purus. Aenean molestie euismod nunc, sed fringilla turpis auctor nec. Suspendisse faucibus ligula sed magna facilisis ornare.
+  El código que puedes observar en pantalla se utiliza para crear una tabla con el nombre de “alumnos” en una base de datos que tenemos en clase. La tabla “alumnos” contiene toda la información sobre los estudiantes del ficticio centro donde también se incluirán el DNI, nombre y apellidos, dirección y teléfono, la edad y el CIF de la empresa a la que el alumno este asociado.
+</p>
+
+<p align="justify">
+  El primer campo que tenemos es el campo que hace referencia al campo del “DNI” el cual hemos definido con un carácter de (char) lo que eso significa es que tiene una longitud máxima de 9 caracteres. A parte de lo anterior este campo se define como una clave primaria (primary key) de la tabla, por lo cual cada valor que nos permitirá escribir será un valor único en toda la tabla, esto nos sirve para identificar un valor único en la tabla.
+<p>
+
+```
+   dni char(9) constraint alumnos_pk primary key;  
+```
+
+<p align="justify">
+  lorem
 </p>
 
 ```
@@ -25,7 +37,7 @@ create table alumnos(
    cif char(9) constraint alumnos_fk references empresas  
           on delete set null  
 );  
-  ```
+```
 
 ## <h2 align="center"><strong>CONSULTA <em>INSERT INTO</em></strong></h2>
 
