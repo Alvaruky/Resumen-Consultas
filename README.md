@@ -35,14 +35,17 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 );    
   ```
 
-## <h2 align="center"><strong>CONSULTA <em>SELECT LENGTH</em></strong></h2>
+## <h2 align="center"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
 
 <p align="justify">
     Sed tempor tempus dignissim. Aenean facilisis arcu mollis lorem ullamcorper ornare. Nunc quam velit, egestas et leo sed, dictum feugiat metus. Nunc id tellus vel lectus mattis imperdiet vitae vitae ante. Nunc at turpis metus. Phasellus feugiat ipsum id nunc commodo eleifend. Donec facilisis vitae augue in sollicitudin. Curabitur a lectus dolor.
 </p>
 
 ```
-SELECT * FROM ALUMNOS WHERE LENGTH(nombre)>6;  
+SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA  
+FROM EMPRESAS  
+JOIN SUMINISTROS S USING(CIF)  
+JOIN PIEZAS W USING(MODELO,TIPO);  
   ```
 
 ## <h2 align="center"><strong>CONSULTA <em>SELECT WHERE</em></strong></h2>
