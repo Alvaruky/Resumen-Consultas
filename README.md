@@ -1,5 +1,5 @@
 <p align="left">
-    <a href="https://www.centrodonbosco.es/" target="blank" height="14%" width="14%">
+    <a href="https://www.centrodonbosco.es/" target="blank" height="200px" width="100px">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/PieDePagina-removebg-preview%20(1).png" alt="Cabecera-Salesianos">
     </a>
 </p>
