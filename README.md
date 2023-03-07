@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
     <a href="https://www.centrodonbosco.es/" target="blank" style="margin-right: 4px">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/PieDePagina-removebg-preview%20(1).png" alt="Cisco-Networking-Academy">
     </a>
