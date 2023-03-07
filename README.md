@@ -1,3 +1,9 @@
+<p align="center">
+    <a href="https://www.centrodonbosco.es/" target="blank" style="margin-right: 4px">
+    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/PieDePagina-removebg-preview%20(1).png" alt="Cisco-Networking-Academy">
+    </a>
+</p>
+
 # <h1 align="center"><strong>RESUMEN CONSULTAS</strong></h1>
 
 ## <h2 align="center"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
