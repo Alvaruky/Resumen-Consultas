@@ -106,3 +106,9 @@ WHERE INSTR(telefono,'5',1,2)>0;
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/descarga.png" alt="Oracle-Academy" height="34%" width="34%">
   </a>
 </p>
+
+### <h3 align="left"><strong>👇¡RRSS DonBosco!</strong></h3>
+
+<a href="https://www.instagram.com/salesianosvillamuriel/?hl=es" target="blank" style='margin-right:4px'>
+  <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/instagram.svg" alt="donbosco" height="28px" width="28px" />
+</a>
