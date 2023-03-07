@@ -7,7 +7,7 @@
 
 # <h1 align="center"><strong>RESUMEN CONSULTAS</strong></h1>
 
-## <h2 align="center"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
+## <h2 align="left"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
 
 <p align="justify">
   El código que puedes observar en pantalla se utiliza para crear una tabla con el nombre de “alumnos” en una base de datos que tenemos en clase. La tabla “alumnos” contiene toda la información sobre los estudiantes del ficticio centro donde también se incluirán el DNI, nombre y apellidos, dirección y teléfono, la edad y el CIF de la empresa a la que el alumno este asociado.
@@ -39,7 +39,15 @@ apellido2 varchar(50) constraint alumnos_nn3 not null;
 ```
 
 <p align="justify">
-  Hola mundo.
+  El quinto campo con el nombre de “dirección”, que también se declara como otra cadena de caracteres como los anteriores campos con una longitud máxima de 50 caracteres, al contrario que los anteriores campos que le suceden este campo no se define como no nulo (not null), esto significa que si que está permitido que algunos registros que se realicen en la base de datos no tengan un valor en este campo, en otras palabras, puedes dejar este campo en blanco que no pasará nada.
+</p>
+
+```
+direccion varchar(50);
+```
+
+<p align="justify">
+  Hola Mundo
 </p>
 
 ```
@@ -56,7 +64,7 @@ create table alumnos(
 );  
 ```
 
-## <h2 align="center"><strong>CONSULTA <em>INSERT INTO</em></strong></h2>
+## <h2 align="left"><strong>CONSULTA <em>INSERT INTO</em></strong></h2>
 
 <p align="justify">
     Vestibulum vitae lorem elementum, commodo risus quis, posuere arcu. Suspendisse imperdiet est at erat elementum, vitae laoreet erat consequat. Quisque hendrerit, erat nec porta scelerisque, risus neque tristique lorem, eu molestie mi magna sit amet tortor. Maecenas eget sodales dui. Nullam dapibus, augue vel varius gravida, nunc felis iaculis mi, vel vehicula libero sem quis velit. Ut magna erat, iaculis vitae ligula porta, laoreet faucibus magna. Aliquam erat volutpat. Aenean vel massa accumsan sem iaculis elementum et eget mi. Cras dictum sem mi, in mollis neque placerat non. Fusce ac orci ac nunc tristique tristique iaculis in lectus. In volutpat sollicitudin quam vel sagittis.
@@ -71,7 +79,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 );    
   ```
 
-## <h2 align="center"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
+## <h2 align="left"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
 
 <p align="justify">
     Sed tempor tempus dignissim. Aenean facilisis arcu mollis lorem ullamcorper ornare. Nunc quam velit, egestas et leo sed, dictum feugiat metus. Nunc id tellus vel lectus mattis imperdiet vitae vitae ante. Nunc at turpis metus. Phasellus feugiat ipsum id nunc commodo eleifend. Donec facilisis vitae augue in sollicitudin. Curabitur a lectus dolor.
@@ -84,7 +92,7 @@ JOIN SUMINISTROS S USING(CIF)
 JOIN PIEZAS W USING(MODELO,TIPO);  
   ```
 
-## <h2 align="center"><strong>CONSULTA <em>SELECT WHERE</em></strong></h2>
+## <h2 align="left"><strong>CONSULTA <em>SELECT WHERE</em></strong></h2>
 
 <p align="justify">
     Cras congue velit viverra ultricies elementum. Duis vel lacus id libero vulputate vehicula eu a ligula. Nam interdum dolor id tellus sodales, in pretium nunc vestibulum. Pellentesque vel feugiat leo. Sed et tincidunt leo, at sagittis urna. Nam vel tellus metus. Aliquam aliquet, sapien eu posuere laoreet, massa lacus pharetra tellus, non varius neque urna eget ipsum. Aliquam sed pharetra dolor. Fusce rhoncus massa quis sapien aliquam, sed elementum diam faucibus. Donec convallis risus quis est varius vulputate. Vestibulum quis erat tempus, efficitur dolor eu, facilisis erat. Maecenas ultrices vulputate arcu, sit amet viverra augue volutpat ac. Proin a egestas quam. Praesent a erat eget nunc aliquam bibendum id at orci.
