@@ -1,7 +1,7 @@
 <p align="left">
     <a href="https://www.centrodonbosco.es/" target="blank">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/PieDePagina-removebg-preview%20(1).png" alt="Cabecera-Salesianos"
-    height="100px" width="500px">
+    height="50px" width="250px">
     </a>
 </p>
 
