@@ -63,6 +63,10 @@ WHERE INSTR(telefono,'5',1,2)>0;
 ## <h2 align="left"><strong>LICENCIAS</strong></h2>
 
 <p align="left">
+    <a href="https://www.netacad.com/" target="blank" style="margin-right: 4px">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/NetworkingAcademy_360px_72_RGB.png" alt="Cisco-Networking-Academy" height="50px" width="50px">
+    </a>
+    <a href="https://academy.oracle.com/es/" target="blank" style="margin-right: 4px">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/descarga.png" alt="Oracle-Academy" height="34%" width="34%">
+  </a>
 </p>
