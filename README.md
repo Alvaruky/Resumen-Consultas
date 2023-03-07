@@ -60,12 +60,9 @@ FROM alumnos
 WHERE INSTR(telefono,'5',1,2)>0;  
   ```
 
-## <h2 align="center"><strong>LICENCIAS</strong></h2>
+## <h2 align="left"><strong>LICENCIAS</strong></h2>
 
-<p align="center">
-    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/descarga.png" alt="Oracle-Academy" height="25%" width="25%">
-</p>
-
-<p align="center">
-    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/NetworkingAcademy_360px_72_RGB.png" alt="Cisco-Networking-Academy" height="7%" width="7%">
+<p align="left">
+    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/NetworkingAcademy_360px_72_RGB.png" alt="Cisco-Networking-Academy" height="50px" width="50px">
+    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/descarga.png" alt="Oracle-Academy" height="34%" width="34%">
 </p>
