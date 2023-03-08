@@ -118,51 +118,59 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 ```
 
 <p align="justify">
-  Hola Mundo.
+  La segunda instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
 </p>
 
-<p align="left">
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-</p>
+* El valor "MECAN011" se inserta en la columna "COD_CURSO".
+* El valor "Soldadura" se inserta en la columna "TITULO".
+* El valor 200 se inserta en la columna "DURACION".
+* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
 
-<p align="justify">
-  Hola Mundo.
-</p>
-
-<p align="left">
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-</p>
+``` 
+INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('MECAN011', 'Soldadura', 200, null, null);  
+```
 
 <p align="justify">
-  Hola Mundo.
+  La tercera instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
 </p>
 
-<p align="left">
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-</p>
+* El valor "OFICG001" se inserta en la columna "COD_CURSO".
+* El valor "Mecanografía" se inserta en la columna "TITULO".
+* El valor 30 se inserta en la columna "DURACION".
+* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
 
-<p align="justify">
-  Hola Mundo.
-</p>
-
-<p align="left">
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-  * Hola Mundo.
-</p>
+``` 
+INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('OFICG001', 'Mecanografía', 30, null, null);  
+```
 
 <p align="justify">
-  Hola Mundo Resumido.
+  La cuarta instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+</p>
+
+* El valor "SGBDR010" se inserta en la columna "COD_CURSO".
+* El valor "Introducción a Oracle" se inserta en la columna "TITULO".
+* El valor 90 se inserta en la columna "DURACION".
+* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+
+``` 
+INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR010', 'Introducción a Oracle', 90, null, null); 
+```
+
+<p align="justify">
+  La quinta instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+</p>
+
+* El valor "SGBDR011" se inserta en la columna "COD_CURSO".
+* El valor "Programación PL/SQL" se inserta en la columna "TITULO".
+* El valor 110 se inserta en la columna "DURACION".
+* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+
+``` 
+INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR011', 'Programación PL/SQL', 110, null, null); 
+```
+
+<p align="justify">
+  En resumen, este código inserta cinco filas en la tabla "TIPOS_CURSO" de una base de datos, cada una con valores específicos para cada columna.
 </p>
 
 ## <h2 align="left"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
@@ -190,9 +198,12 @@ FROM alumnos
 WHERE INSTR(telefono,'5',1,2)>0;  
   ```
 
-## <h2 align="left"><strong>PERMISOS CÓDIGO</strong></h2>
+## <h2 align="left"><strong>LICENCIAS</strong></h2>
 
 <p align="left">
+    <a href="https://www.netacad.com/" target="blank">
+    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/NetworkingAcademy_360px_72_RGB.png" alt="Cisco-Networking-Academy" height="50px" width="50px">
+    </a>
     <a href="https://academy.oracle.com/es/" target="blank">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/descarga.png" alt="Oracle-Academy" height="34%" width="34%">
   </a>
