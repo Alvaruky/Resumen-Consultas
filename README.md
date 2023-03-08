@@ -294,7 +294,7 @@ WHERE INSTR(telefono,'5',1,2)>0;
   </a>
 </p>
 
-### <h3 align="left"><strong>👇¡INSTAGRAM Centro Don Bosco!</strong></h3>
+### <h3 align="left"><strong>👇¡Instagram Centro Don Bosco!</strong></h3>
 
 <a href="https://www.instagram.com/salesianosvillamuriel/?hl=es" target="blank" style='margin-right:4px'>
   <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/instagram.svg" alt="donbosco" height="28px" width="28px" />
