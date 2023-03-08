@@ -78,11 +78,8 @@ apellido1 varchar(50) constraint alumnos_nn2 not null,
 apellido2 varchar(50) constraint alumnos_nn3 not null;
 ```
 
-
-
-
 <p align="justify">
-  El quinto campo con el nombre de “dirección”, que también se declara como otra cadena de caracteres como los anteriores campos con una longitud máxima de 50 caracteres, al contrario que los anteriores campos que le suceden este campo no se define como no nulo (not null), esto significa que si que está permitido que algunos registros que se realicen en la base de datos no tengan un valor en este campo, en otras palabras, puedes dejar este campo en blanco que no pasará nada.
+  El quinto campo con el nombre de <em>“dirección”</em>, que tambi&eacute;n se declara como otra cadena de caracteres como los anteriores campos con una longitud m&aacute;ima de 50 caracteres, al contrario que los anteriores campos que le suceden este campo no se define como no nulo (not null), esto significa que si que est&aacute; permitido que algunos registros que se realicen en la base de datos no tengan un valor en este campo, en otras palabras, puedes dejar este campo en blanco que no pasar&aacute; nada.
 </p>
 
 ```
@@ -90,7 +87,7 @@ direccion varchar(50);
 ```
 
 <p align="justify">
-  En el sexto campo de nuestro código de SQL aparece el campo llamado como “teléfono” declarado como todos los anteriores como como un carácter (char) con una longitud máxima de 9 caracteres. Al igual que el campo "dirección", este campo no se define como no nulo (not null) con lo que también te permite dejar este campo sin rellenar.
+  En el sexto campo de nuestro c&oacute;digo de SQL aparece el campo llamado como <em>“teléfono”</em> declarado como todos los anteriores como como un car&aacute;cter (char) con una longitud m&aacute;xima de 9 caracteres. Al igual que el campo <em>"dirección"</em>, este campo no se define como no nulo (not null) con lo que tambi&eacute;n te permite dejar este campo sin rellenar.
 </p>
 
 ```
@@ -98,7 +95,7 @@ telefono char(9);
 ```
 
 <p align="justify">
-  En el séptimo campo llamado “edad”, que es declarado con la función (number) de número con una longitud máxima de 2 caracteres e igual que los dos anteriores campos este campo también permite el dejarle en blanco.
+  En el s&eacute;ptimo campo llamado <em>“edad”</em>, que es declarado con la funci&oacute;n (number) de n&uacute;mero con una longitud m&aacute;xima de 2 caracteres e igual que los dos anteriores campos este campo tambi&eacute;n permite el dejarle en blanco.
 </p>
 
 ```
@@ -106,7 +103,7 @@ edad number(2);
 ```
 
 <p align="justify">
-  El octavo y último campo es el campo llamado "cif", que se declara como un carácter (char) con una longitud máxima de 9 caracteres. Este campo es definido como clave externa (foreign key) y este hace referencia a la tabla "empresas", lo que significa que cada valor en este campo debe coincidir con un valor ya existente en la tabla de "empresas" de la base de datos. Además, se especifica la acción a tomar en caso de que se elimine un registro de la tabla "empresas": en este caso, se establecerá el valor del campo "cif" en nulo (null) para todos los registros en la tabla "alumnos" que hagan referencia a ese registro eliminado de la base de datos.
+  El octavo y &uacute;ltimo campo es el campo llamado <em>"cif"</em>, que se declara como un car&aacute;cter (char) con una longitud m&aacute;xima de 9 caracteres. Este campo es definido como clave externa (foreign key) y este hace referencia a la tabla <em>"empresas"</em>, lo que significa que cada valor en este campo debe coincidir con un valor ya existente en la tabla de <em>"empresas"</em> de la base de datos. Adem&aacute;s, se especifica la acci&oacute;n a tomar en caso de que se elimine un registro de la tabla <em>"empresas"</em>: en este caso, se establecer&aacute; el valor del campo <em>"cif"</em> en nulo (null) para todos los registros en la tabla <em>"alumnos"</em> que hagan referencia a ese registro eliminado de la base de datos.
 </p>
 
 ``` 
@@ -121,86 +118,85 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('MECAN011', 'Soldadura', 200, null, null);  
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('OFICG001', 'Mecanografía', 30, null, null);  
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR010', 'Introducción a Oracle', 90, null, null);  
-INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR011', 'Programación PL/SQL', 110, null, null);  
-);    
+INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR011', 'Programación PL/SQL', 110, null, null););    
 ```
 
 <p align="justify">
-  Este código se utiliza para insertar datos en la tabla "TIPOS_CURSO" de nuestra base de datos.
+  Este c&oacute;digo se utiliza para insertar datos en la tabla <em>"TIPOS_CURSO"</em> de nuestra base de datos.
 
 </p>
 
 <p align="justify">
-  Cada instrucción "INSERT INTO" introduce una fila en la tabla "TIPOS_CURSO" con valores específicos para cada columna.
+  Cada instrucci&oacute;n <code>"INSERT INTO"</code> introduce una fila en la tabla <em>"TIPOS_CURSO"</em> con valores espec&iacute;ficos para cada columna.
 </p>
 
 <p align="justify">
-  La primera instrucción "INSERT INTO" introduce una fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+  La primera instrucci&oacute;n <code>"INSERT INTO"</code> introduce una fila en la tabla <em>"TIPOS_CURSO"</em> con los siguientes valores:
 </p>
 
-* El valor "INFOR031" se inserta en la columna "COD_CURSO".
-* El valor "Linux II" se inserta en la columna "TITULO".
-* El valor 90 se inserta en la columna "DURACION".
-* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+* El valor <em>"INFOR031"</em> se inserta en la columna <em>"COD_CURSO"</em>.
+* El valor <em>"Linux II"</em> se inserta en la columna <em>"TITULO"</em>.
+* El valor 90 se inserta en la columna <em>"DURACION"</em>.
+* El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
 ``` 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('INFOR031', 'Linux II', 90, null, null);  
 ```
 
 <p align="justify">
-  La segunda instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+  La segunda instrucci&oacute;n <code>"INSERT INTO"</code> introduce otra fila en la tabla <em>"TIPOS_CURSO"</em> con los siguientes valores:
 </p>
 
-* El valor "MECAN011" se inserta en la columna "COD_CURSO".
-* El valor "Soldadura" se inserta en la columna "TITULO".
-* El valor 200 se inserta en la columna "DURACION".
-* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+* El valor <em>"MECAN011"</em> se inserta en la columna <em>"COD_CURSO"</em>.
+* El valor <em>"Soldadura"</em> se inserta en la columna <em>"TITULO"</em>.
+* El valor 200 se inserta en la columna <em>"DURACION"</em>.
+* El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
 ``` 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('MECAN011', 'Soldadura', 200, null, null);  
 ```
 
 <p align="justify">
-  La tercera instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+  La tercera instrucci&oacute;n <code>"INSERT INTO"</code> introduce otra fila en la tabla <em>"TIPOS_CURSO"</em> con los siguientes valores:
 </p>
 
-* El valor "OFICG001" se inserta en la columna "COD_CURSO".
-* El valor "Mecanografía" se inserta en la columna "TITULO".
-* El valor 30 se inserta en la columna "DURACION".
-* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+* El valor <em>"OFICG001"</em> se inserta en la columna <em>"COD_CURSO"</em>.
+* El valor <em>"Mecanograf&iacute;a"</em> se inserta en la columna <em>"TITULO"</em>.
+* El valor 30 se inserta en la columna <em>"DURACION"</em>.
+* El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
 ``` 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('OFICG001', 'Mecanografía', 30, null, null);  
 ```
 
 <p align="justify">
-  La cuarta instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+  La cuarta instrucci&oacute;n <code>"INSERT INTO"</code> introduce otra fila en la tabla <em>"TIPOS_CURSO"</em> con los siguientes valores:
 </p>
 
-* El valor "SGBDR010" se inserta en la columna "COD_CURSO".
-* El valor "Introducción a Oracle" se inserta en la columna "TITULO".
-* El valor 90 se inserta en la columna "DURACION".
-* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+* El valor <em>"SGBDR010"</em> se inserta en la columna <em>"COD_CURSO"</em>.
+* El valor <em>"Introducci&oacute;n a Oracle"</em> se inserta en la columna <em>"TITULO"</em>.
+* El valor 90 se inserta en la columna <em>"DURACION"</em>.
+* El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
 ``` 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR010', 'Introducción a Oracle', 90, null, null); 
 ```
 
 <p align="justify">
-  La quinta instrucción "INSERT INTO" introduce otra fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+  La quinta instrucci&oacute;n <code>"INSERT INTO"</code> introduce otra fila en la tabla <em>"TIPOS_CURSO"</em> con los siguientes valores:
 </p>
 
-* El valor "SGBDR011" se inserta en la columna "COD_CURSO".
-* El valor "Programación PL/SQL" se inserta en la columna "TITULO".
-* El valor 110 se inserta en la columna "DURACION".
-* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+* El valor <em>"SGBDR011"</em> se inserta en la columna <em>"COD_CURSO"</em>.
+* El valor <em>"Programación PL/SQL"</em> se inserta en la columna <em>"TITULO"</em>.
+* El valor 110 se inserta en la columna <em>"DURACION"</em>.
+* El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
 ``` 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR011', 'Programación PL/SQL', 110, null, null); 
 ```
 
 <p align="justify">
-  En resumen, este código inserta cinco filas en la tabla "TIPOS_CURSO" de una base de datos, cada una con valores específicos para cada columna.
+  En resumen, este c&oacute;digo inserta cinco filas en la tabla <em>"TIPOS_CURSO"</em> de una base de datos, cada una con valores espec&iacute;ficos para cada columna.
 </p>
 
 ## <h2 align="left"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
@@ -213,15 +209,15 @@ JOIN PIEZAS W USING(MODELO,TIPO);
 ```
 
 <p align="justify">
-  Este código se utiliza para realizar una consulta en la base de datos. La consulta busca seleccionar los nombres, localidades, tipos, modelos y precios de compra de las empresas que han adquirido suministros y de las piezas que han utilizado dichas empresas.
+  Este c&oacute;digo se utiliza para realizar una consulta en la base de datos. La consulta busca seleccionar los nombres, localidades, tipos, modelos y precios de compra de las empresas que han adquirido suministros y de las piezas que han utilizado dichas empresas.
 </p>
 
 <p align="justify">
-  La consulta está formada por tres instrucciones JOIN que unen tres tablas diferentes de la base de datos: EMPRESAS, SUMINISTROS y PIEZAS.
+  La consulta est&aacute; formada por tres instrucciones <code>JOIN</code> que unen tres tablas diferentes de la base de datos: <em>EMPRESAS, SUMINISTROS y PIEZAS</em>.
 </p>
 
 <p align="justify">
-  La primera instrucción JOIN se utiliza para unir la tabla EMPRESAS con la tabla SUMINISTROS. La sintaxis es la siguiente:
+  La primera instrucción <code>JOIN</code> se utiliza para unir la tabla <em>EMPRESAS</em> con la tabla <em>SUMINISTROS</em>. La sintaxis es la siguiente:
 </p>
 
 ```
@@ -229,11 +225,11 @@ JOIN SUMINISTROS S USING(CIF);
 ```
 
 <p align="justify">
-  Esto significa que se unen las dos tablas mediante la columna "CIF" de la tabla EMPRESAS y la columna "CIF" de la tabla SUMINISTROS. La palabra clave "USING" se utiliza para especificar las columnas que se utilizan para unir las dos tablas. En este caso, se utiliza "CIF" porque es la columna que tienen en común.
+  Esto significa que se unen las dos tablas mediante la columna <em>"CIF"</em> de la tabla <em>EMPRESAS</em> y la columna <em>"CIF"</em> de la tabla <em>SUMINISTROS</em>. La palabra clave <code>"USING"</code> se utiliza para especificar las columnas que se utilizan para unir las dos tablas. En este caso, se utiliza <em>"CIF"</em> porque es la columna que tienen en com&uacute;n.
 </p>
 
 <p align="justify">
-  La segunda instrucción JOIN se utiliza para unir la tabla SUMINISTROS con la tabla PIEZAS. La sintaxis es la siguiente:
+  La segunda instrucci&oacute;n <code>JOIN</code> se utiliza para unir la tabla <em>SUMINISTROS</em> con la tabla <em>PIEZAS</em>. La sintaxis es la siguiente:
 </p>
 
 ```
@@ -241,22 +237,22 @@ JOIN PIEZAS W USING(MODELO,TIPO);
 ```
 
 <p align="justify">
-Esto significa que se unen las dos tablas mediante las columnas "MODELO" y "TIPO". La palabra clave "USING" se utiliza de nuevo para especificar las columnas que se utilizan para unir las dos tablas.
+Esto significa que se unen las dos tablas mediante las columnas <em>"MODELO"</em> y <em>"TIPO"</em>. La palabra clave <code>"USING"</code> se utiliza de nuevo para especificar las columnas que se utilizan para unir las dos tablas.
 </p>
 
 <p align="justify">
-  La última parte de la consulta es la siguiente:
+  La &uacute;ltima parte de la consulta es la siguiente:
 </p>
 
 ```
 SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA; 
 ```
 <p align="justify">
-  Esto significa que se seleccionan las columnas "NOMBRE", "LOCALIDAD", "TIPO", "MODELO" y "PRECIO_COMPRA" de las tres tablas unidas.
+  Esto significa que se seleccionan las columnas <em>"NOMBRE", "LOCALIDAD", "TIPO", "MODELO"</em> y <em>"PRECIO_COMPRA"</em> de las tres tablas unidas.
 </p>
 
 <p align="justify">
-  En resumen, esta consulta SQL vincula las tablas "EMPRESAS", "SUMINISTROS" y "PIEZAS" utilizando las claves externas e internas apropiadas, y selecciona información específica de estas tablas. La consulta devuelve un conjunto de resultados que incluye los nombres de las empresas, la localidad, el tipo y modelo de pieza, y el precio de compra correspondiente.
+  En resumen, esta consulta SQL vincula las tablas <em>"EMPRESAS", "SUMINISTROS"</em> y <em>"PIEZAS"</em> utilizando las claves externas e internas apropiadas, y selecciona informaci&oacute;n espec&iacute;fica de estas tablas. La consulta devuelve un conjunto de resultados que incluye los nombres de las empresas, la localidad, el tipo y modelo de pieza, y el precio de compra correspondiente.
 </p>
 
 ## <h2 align="left"><strong>CONSULTA <em>SELECT WHERE</em></strong></h2>
@@ -268,11 +264,11 @@ WHERE INSTR(telefono,'5',1,2)>0;
 ```
 
 <p align="justify">
-  Este código corresponde a una consulta en lenguaje SQL (Structured Query Language) que busca obtener una lista de nombres, apellidos y teléfonos de alumnos, pero con la condición de que los teléfonos tengan el número "5" en la segunda posición.
+  Este c&oacute;digo corresponde a una consulta en lenguaje SQL (Structured Query Language) que busca obtener una lista de nombres, apellidos y tel&eacute;fonos de alumnos, pero con la condici&oacute;n de que los tel&eacute;fonos tengan el n&uacute;mero "5" en la segunda posici&oacute;n.
 </p>
 
 <p align="justify">
-  Veamos con detalle cada parte del código:
+  Veamos con detalle cada parte del c&oacute;digo:
 </p>
 
 ```
@@ -280,7 +276,7 @@ SELECT nombre,apellido1,apellido2,telefono
 ```
 
 <p align="justify">
-Esta es la cláusula SELECT, que indica las columnas que queremos recuperar de la tabla "alumnos". En este caso, se especifica que se desea obtener la columna "nombre", "apellido1", "apellido2" y "telefono".
+Esta es la cl&aacute;usula <code>SELECT</code>, que indica las columnas que queremos recuperar de la tabla <em>"alumnos"</em>. En este caso, se especifica que se desea obtener la columna <em>"nombre", "apellido1", "apellido2"</em> y <em>"telefono"</em>.
 </p>
 
 ``` 
@@ -288,7 +284,7 @@ FROM alumnos
 ```
 
 <p align="justify">
-  Esta cláusula indica la tabla sobre la cual se va a realizar la consulta. En este caso, la tabla es "alumnos".
+  Esta cl&aacute;usula indica la tabla sobre la cual se va a realizar la consulta. En este caso, la tabla es <em>"alumnos"</em>.
 </p>
 
 ```
@@ -296,27 +292,27 @@ WHERE INSTR(telefono,'5',1,2)>0;
 ```
 
 <p align="justify">
-  Esta es la cláusula WHERE, que permite filtrar los resultados de la consulta en función de una condición. En este caso, se utiliza la función INSTR() para buscar la posición de la primera ocurrencia del número "5" en la cadena de texto del campo "telefono". Los parámetros de la función son:
+  Esta es la cl&aacute;usula <code>WHERE</code>, que permite filtrar los resultados de la consulta en funci&oacute;n de una condici&oacute;n. En este caso, se utiliza la función <code>INSTR()</code> para buscar la posici&oacute;n de la primera ocurrencia del n&uacute;mero "5" en la cadena de texto del campo <em>"telefono"</em>. Los par&aacute;metros de la funci&oacute;n son:
 </p>
 
-* La cadena de texto a buscar: "telefono".
-* La cadena de texto a buscar dentro de la primera: "5".
-* La posición inicial de la búsqueda: 1 (primer caracter).
-* La cantidad de caracteres a considerar: 2 (buscando solo en la segunda posición).
+* La cadena de texto a buscar: <em>"telefono"</em>.
+* La cadena de texto a buscar dentro de la primera: <em>"5"</em>.
+* La posici&oacute;n inicial de la b&uacute;squeda: 1 (primer caracter).
+* La cantidad de caracteres a considerar: 2 (buscando solo en la segunda posici&oacute;n).
 
 <p align="justify">
-  El resultado de la función INSTR() es un número entero que indica la posición de la primera ocurrencia de la cadena de texto buscada. Si la cadena no se encuentra en el texto, el valor devuelto es cero.
-</p>
-
-<p align="justify">
-  Por último, se evalúa si el resultado de la función INSTR() es mayor que cero. Si es así, significa que la cadena "5" fue encontrada en la segunda posición del campo "telefono" y, por lo tanto, se incluirá el registro en el resultado de la consulta. Si el resultado de la función es cero, el registro será descartado.
+  El resultado de la funci&oacute;n <code>INSTR()</code> es un n&uacute;mero entero que indica la posici&oacute;n de la primera ocurrencia de la cadena de texto buscada. Si la cadena no se encuentra en el texto, el valor devuelto es cero.
 </p>
 
 <p align="justify">
-  En resumen, la consulta SQL busca obtener la lista de nombres, apellidos y teléfonos de alumnos cuyos teléfonos tengan el número "5" en la segunda posición.
+  Por &uacute;ltimo, se eval&uacute;a si el resultado de la funci&oacute;n <code>INSTR()</code> es mayor que cero. Si es as&iacute;, significa que la cadena <em>"5"</em> fue encontrada en la segunda posici&oacute;n del campo <em>"telefono"</em> y, por lo tanto, se incluir&aacute; el registro en el resultado de la consulta. Si el resultado de la funci&oacute;n es cero, el registro ser&aacute; descartado.
 </p>
 
-## <h2 align="left"><strong>PERMISOS CÓDIGO</strong></h2>
+<p align="justify">
+  En resumen, la consulta SQL busca obtener la lista de nombres, apellidos y tel&eacute;fonos de alumnos cuyos tel&eacute;fonos tengan el n&uacute;mero <em>"5"</em> en la segunda posici&oacute;n.
+</p>
+
+## <h2 align="left"><strong>PERMISOS C&Oacute;DIGO</strong></h2>
 
 <p align="left">
     <a href="https://academy.oracle.com/es/" target="blank">
