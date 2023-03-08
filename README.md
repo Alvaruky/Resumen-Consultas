@@ -10,7 +10,7 @@
 ## <h2 align="left"><strong>RESUMEN</strong></h2>
 
 <p align="justify">
-  SQL (Structured Query Language) es un lenguaje de programación utilizado para administrar y manipular datos en bases de datos relacionales. Se utiliza para realizar consultas, actualizaciones y eliminaciones de datos, así como para crear y modificar la estructura de las bases de datos.
+  SQL (Structured Query Language) es un lenguaje de programaci&oacute;n utilizado para administrar y manipular datos en bases de datos relacionales. Se utiliza para realizar consultas, actualizaciones y eliminaciones de datos, así como para crear y modificar la estructura de las bases de datos.
 </p>
 
 <p align="justify">
