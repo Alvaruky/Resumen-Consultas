@@ -10,28 +10,28 @@
 ## <h2 align="left"><strong>RESUMEN</strong></h2>
 
 <p align="justify">
-  SQL (Structured Query Language) es un lenguaje de programaci&oacute;n utilizado para administrar y manipular datos en bases de datos relacionales. Se utiliza para realizar consultas, actualizaciones y eliminaciones de datos, así como para crear y modificar la estructura de las bases de datos.
+  SQL (Structured Query Language) es un lenguaje de programaci&oacute;n utilizado para administrar y manipular datos en bases de datos relacionales. Se utiliza para realizar consultas, actualizaciones y eliminaciones de datos, as&iacute; como para crear y modificar la estructura de las bases de datos.
 </p>
 
 <p align="justify">
-  Las consultas SQL son instrucciones que se utilizan para recuperar datos específicos de una base de datos. Hay varios tipos de consultas básicas y avanzadas que se pueden utilizar en SQL:
+  Las consultas SQL son instrucciones que se utilizan para recuperar datos espec&iacute;ficos de una base de datos. Hay varios tipos de consultas b&aacute;sicas y avanzadas que se pueden utilizar en SQL:
 </p>
 
-#### <h4 align="left"><strong>CONSULTAS BÁSICAS</strong></h4>
+#### <h4 align="left"><strong>CONSULTAS B&Aacute;SICAS</strong></h4>
 
-* <strong>SELECT:</strong> esta consulta se utiliza para seleccionar datos específicos de una tabla o varias tablas. La sintaxis básica de SELECT es: SELECT columnas    FROM tabla.
-* <strong>WHERE:</strong> esta consulta se utiliza para filtrar los datos según una condición específica. La sintaxis básica de WHERE es: WHERE condición.
-* <strong>ORDER BY:</strong> esta consulta se utiliza para ordenar los resultados en orden ascendente o descendente según una o varias columnas. La sintaxis básica de ORDER BY es: ORDER BY columnas ASC/DESC.
+* <strong>SELECT:</strong> esta consulta se utiliza para seleccionar datos espec&iacute;ficos de una tabla o varias tablas. La sintaxis b&aacute;sica de SELECT es: <code> SELECT columnas FROM tabla.</code>
+* <strong>WHERE:</strong> esta consulta se utiliza para filtrar los datos seg&uacute;n una condici&oacute;n espec&iacute;fica. La sintaxis b&aacute;sica de WHERE es: <code>WHERE condición.</code>
+* <strong>ORDER BY:</strong> esta consulta se utiliza para ordenar los resultados en orden ascendente o descendente seg&uacute;n una o varias columnas. La sintaxis b&aacute;sica de ORDER BY es: <code>ORDER BY columnas ASC/DESC.</code>
 
 #### <h4 align="left"><strong>CONSULTAS AVANZADAS</strong></h4>
 
-* <strong>JOIN:</strong> esta consulta se utiliza para combinar datos de dos o más tablas. Hay varios tipos de JOIN, incluyendo INNER JOIN, LEFT JOIN, RIGHT JOIN y FULL OUTER JOIN.
-* <strong>GROUP BY:</strong> esta consulta se utiliza para agrupar los datos según una o varias columnas y realizar operaciones de agregación en los grupos resultantes, como SUM, AVG o COUNT. La sintaxis básica de GROUP BY es: GROUP BY columnas.
-* <strong>HAVING:</strong> esta consulta se utiliza para filtrar los grupos resultantes de la consulta GROUP BY según una condición específica. La sintaxis básica de HAVING es: HAVING condición.
-* <strong>UNION:</strong> esta consulta se utiliza para combinar los resultados de dos o más consultas SELECT en una sola tabla. La sintaxis básica de UNION es: SELECT columnas FROM tabla1 UNION SELECT columnas FROM tabla2.
+* <strong>JOIN:</strong> esta consulta se utiliza para combinar datos de dos o m&aacute;s tablas. Hay varios tipos de JOIN, incluyendo <code>INNER JOIN, LEFT JOIN, RIGHT JOIN y FULL OUTER JOIN.</code>
+* <strong>GROUP BY:</strong> esta consulta se utiliza para agrupar los datos seg&uacute;n una o varias columnas y realizar operaciones de agregaci&oacute;n en los grupos resultantes, como <em>SUM, AVG</em> o <em>COUNT</em>. La sintaxis básica de GROUP BY es: <code>GROUP BY columnas.</code>
+* <strong>HAVING:</strong> esta consulta se utiliza para filtrar los grupos resultantes de la consulta GROUP BY seg&uacute;n una condici&oacute;n espec&iacute;fica. La sintaxis b&aacute;sica de HAVING es: <code>HAVING condición.</code>
+* <strong>UNION:</strong> esta consulta se utiliza para combinar los resultados de dos o m&aacute;s consultas SELECT en una sola tabla. La sintaxis básica de UNION es: <code>SELECT columnas FROM tabla1 UNION SELECT columnas FROM tabla2.</code>
 
 <p align="justify">
-  En resumen, SQL es un lenguaje de programación utilizado para administrar y manipular datos en bases de datos relacionales. Las consultas SQL se utilizan para recuperar datos específicos de una base de datos, y hay varios tipos de consultas básicas y avanzadas que se pueden utilizar. Las consultas básicas incluyen SELECT, WHERE y ORDER BY, mientras que las consultas avanzadas incluyen JOIN, GROUP BY, HAVING y UNION.
+  En resumen, SQL es un lenguaje de programaci&oacute;n utilizado para administrar y manipular datos en bases de datos relacionales. Las consultas SQL se utilizan para recuperar datos espec&iacute;ficos de una base de datos, y hay varios tipos de consultas b&aacute;sicas y avanzadas que se pueden utilizar. Las consultas b&aacute;sicas incluyen <em>SELECT, WHERE</em> y <em>ORDER BY</em>, mientras que las consultas avanzadas incluyen <em>JOIN, GROUP BY, HAVING</em> y <em>UNION.</em>
 </p>
 
 ## <h2 align="left"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
@@ -50,11 +50,11 @@ create table alumnos(
 ```
 
 <p align="justify">
-  El código que puedes observar en pantalla se utiliza para crear una tabla con el nombre de “alumnos” en una base de datos que tenemos en clase. La tabla “alumnos” contiene toda la información sobre los estudiantes del ficticio centro donde también se incluirán el DNI, nombre y apellidos, dirección y teléfono, la edad y el CIF de la empresa a la que el alumno este asociado.
+  El c&oacute;digo que puedes observar en pantalla se utiliza para crear una tabla con el nombre de <em>“alumnos”</em> en una base de datos que tenemos en clase. La tabla <em>“alumnos”</em> contiene toda la informaci&oacute;n sobre los estudiantes del ficticio centro donde tambi&eacute;n se incluir&aacute;n el <em>DNI, nombre y apellidos, dirección y teléfono, la edad y el CIF</em> de la empresa a la que el alumno este asociado.
 </p>
 
 <p align="justify">
-  El primer campo que tenemos es el campo que hace referencia al campo del “DNI” el cual hemos definido con un carácter de (char) lo que eso significa es que tiene una longitud máxima de 9 caracteres. A parte de lo anterior este campo se define como una clave primaria (primary key) de la tabla, por lo cual cada valor que nos permitirá escribir será un valor único en toda la tabla, esto nos sirve para identificar un valor único en la tabla.
+  El primer campo que tenemos es el campo que hace referencia al campo del <em>“DNI”</em> el cual hemos definido con un car&aacute;cter de (char) lo que eso significa es que tiene una longitud m&aacute;xima de 9 caracteres. A parte de lo anterior este campo se define como una clave primaria (primary key) de la tabla, por lo cual cada valor que nos permitir&aacute; escribir ser&aacute; un valor &uacute;nico en toda la tabla, esto nos sirve para identificar un valor &uacute;nico en la tabla.
 <p>
 
 ```
@@ -62,7 +62,7 @@ dni char(9) constraint alumnos_pk primary key;
 ```
 
 <p align="justify">
-  El segundo campo llamado “nombre”, se declara como una cadena de caracteres como el anterior (varchar) solo que ahora la longitud máxima cambia ligeramente a 50 caracteres, a parte de esto este campo se define como no nulo (not null), con lo que este campo es obligatorio siempre que se haga un registro en la base de datos.
+  El segundo campo llamado <em>“nombre”</em>, se declara como una cadena de caracteres como el anterior (varchar) solo que ahora la longitud m&aacute;xima cambia ligeramente a 50 caracteres, a parte de esto este campo se define como no nulo (not null), con lo que este campo es obligatorio siempre que se haga un registro en la base de datos.
 </p>
 
 ```
@@ -70,13 +70,16 @@ nombre varchar(50) constraint alumnos_nn1 not null;
 ```
 
 <p align="justify">
-  El tercer y cuarto campo podemos observar que hacen referencia a los apellidos, al “apellido1” y al “apellido2”, estos campos, como los anteriores ya mencionados son declarados como cadenas de caracteres con una longitud máxima de 50 caracteres y también se definen como no nulos.
+  El tercer y cuarto campo podemos observar que hacen referencia a los apellidos, al <em>“apellido1”</em> y al <em>“apellido2”</em>, estos campos, como los anteriores ya mencionados son declarados como cadenas de caracteres con una longitud m&aacute;xima de 50 caracteres y también se definen como no nulos.
 </p>
 
 ```
 apellido1 varchar(50) constraint alumnos_nn2 not null,  
 apellido2 varchar(50) constraint alumnos_nn3 not null;
 ```
+
+
+
 
 <p align="justify">
   El quinto campo con el nombre de “dirección”, que también se declara como otra cadena de caracteres como los anteriores campos con una longitud máxima de 50 caracteres, al contrario que los anteriores campos que le suceden este campo no se define como no nulo (not null), esto significa que si que está permitido que algunos registros que se realicen en la base de datos no tengan un valor en este campo, en otras palabras, puedes dejar este campo en blanco que no pasará nada.
