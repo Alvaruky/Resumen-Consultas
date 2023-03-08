@@ -93,7 +93,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR010', 'Introducción a Oracle', 90, null, null);  
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR011', 'Programación PL/SQL', 110, null, null);  
 );    
-  ```
+```
 
 <p align="justify">
   Este código se utiliza para insertar datos en la tabla "TIPOS_CURSO" de nuestra base de datos.
@@ -180,7 +180,7 @@ SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA
 FROM EMPRESAS  
 JOIN SUMINISTROS S USING(CIF)  
 JOIN PIEZAS W USING(MODELO,TIPO);  
-  ```
+```
 
 <p align="justify">
   Este código se utiliza para realizar una consulta en la base de datos. La consulta busca seleccionar los nombres, localidades, tipos, modelos y precios de compra de las empresas que han adquirido suministros y de las piezas que han utilizado dichas empresas.
@@ -196,7 +196,7 @@ JOIN PIEZAS W USING(MODELO,TIPO);
 
 ```
 JOIN SUMINISTROS S USING(CIF); 
-  ```
+```
 
 <p align="justify">
   Esto significa que se unen las dos tablas mediante la columna "CIF" de la tabla EMPRESAS y la columna "CIF" de la tabla SUMINISTROS. La palabra clave "USING" se utiliza para especificar las columnas que se utilizan para unir las dos tablas. En este caso, se utiliza "CIF" porque es la columna que tienen en común.
@@ -208,7 +208,7 @@ JOIN SUMINISTROS S USING(CIF);
 
 ```
 JOIN PIEZAS W USING(MODELO,TIPO); 
-  ```
+```
 
 <p align="justify">
 Esto significa que se unen las dos tablas mediante las columnas "MODELO" y "TIPO". La palabra clave "USING" se utiliza de nuevo para especificar las columnas que se utilizan para unir las dos tablas.
@@ -220,7 +220,7 @@ Esto significa que se unen las dos tablas mediante las columnas "MODELO" y "TIPO
 
 ```
 SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA; 
-  ```
+```
 <p align="justify">
   Esto significa que se seleccionan las columnas "NOMBRE", "LOCALIDAD", "TIPO", "MODELO" y "PRECIO_COMPRA" de las tres tablas unidas.
 </p>
@@ -235,10 +235,55 @@ SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA;
 SELECT nombre,apellido1,apellido2,telefono  
 FROM alumnos  
 WHERE INSTR(telefono,'5',1,2)>0;  
-  ```
+```
 
 <p align="justify">
-    Cras congue velit viverra ultricies elementum. Duis vel lacus id libero vulputate vehicula eu a ligula. Nam interdum dolor id tellus sodales, in pretium nunc vestibulum. Pellentesque vel feugiat leo. Sed et tincidunt leo, at sagittis urna. Nam vel tellus metus. Aliquam aliquet, sapien eu posuere laoreet, massa lacus pharetra tellus, non varius neque urna eget ipsum. Aliquam sed pharetra dolor. Fusce rhoncus massa quis sapien aliquam, sed elementum diam faucibus. Donec convallis risus quis est varius vulputate. Vestibulum quis erat tempus, efficitur dolor eu, facilisis erat. Maecenas ultrices vulputate arcu, sit amet viverra augue volutpat ac. Proin a egestas quam. Praesent a erat eget nunc aliquam bibendum id at orci.
+  Este código corresponde a una consulta en lenguaje SQL (Structured Query Language) que busca obtener una lista de nombres, apellidos y teléfonos de alumnos, pero con la condición de que los teléfonos tengan el número "5" en la segunda posición.
+</p>
+
+<p align="justify">
+  Veamos con detalle cada parte del código:
+</p>
+
+```
+SELECT nombre,apellido1,apellido2,telefono
+```
+
+<p align="justify">
+Esta es la cláusula SELECT, que indica las columnas que queremos recuperar de la tabla "alumnos". En este caso, se especifica que se desea obtener la columna "nombre", "apellido1", "apellido2" y "telefono".
+</p>
+
+``` 
+FROM alumnos
+```
+
+<p align="justify">
+  Esta cláusula indica la tabla sobre la cual se va a realizar la consulta. En este caso, la tabla es "alumnos".
+</p>
+
+```
+WHERE INSTR(telefono,'5',1,2)>0;  
+```
+
+<p align="justify">
+  Esta es la cláusula WHERE, que permite filtrar los resultados de la consulta en función de una condición. En este caso, se utiliza la función INSTR() para buscar la posición de la primera ocurrencia del número "5" en la cadena de texto del campo "telefono". Los parámetros de la función son:
+</p>
+
+* La cadena de texto a buscar: "telefono".
+* La cadena de texto a buscar dentro de la primera: "5".
+* La posición inicial de la búsqueda: 1 (primer caracter).
+* La cantidad de caracteres a considerar: 2 (buscando solo en la segunda posición).
+
+<p align="justify">
+  El resultado de la función INSTR() es un número entero que indica la posición de la primera ocurrencia de la cadena de texto buscada. Si la cadena no se encuentra en el texto, el valor devuelto es cero.
+</p>
+
+<p align="justify">
+  Por último, se evalúa si el resultado de la función INSTR() es mayor que cero. Si es así, significa que la cadena "5" fue encontrada en la segunda posición del campo "telefono" y, por lo tanto, se incluirá el registro en el resultado de la consulta. Si el resultado de la función es cero, el registro será descartado.
+</p>
+
+<p align="justify">
+  En resumen, la consulta SQL busca obtener la lista de nombres, apellidos y teléfonos de alumnos cuyos teléfonos tengan el número "5" en la segunda posición.
 </p>
 
 ## <h2 align="left"><strong>PERMISOS CÓDIGO</strong></h2>
