@@ -31,7 +31,7 @@ create table alumnos(
 <p>
 
 ```
-   dni char(9) constraint alumnos_pk primary key;  
+dni char(9) constraint alumnos_pk primary key;  
 ```
 
 <p align="justify">
@@ -175,10 +175,6 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 
 ## <h2 align="left"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
 
-<p align="justify">
-    Sed tempor tempus dignissim. Aenean facilisis arcu mollis lorem ullamcorper ornare. Nunc quam velit, egestas et leo sed, dictum feugiat metus. Nunc id tellus vel lectus mattis imperdiet vitae vitae ante. Nunc at turpis metus. Phasellus feugiat ipsum id nunc commodo eleifend. Donec facilisis vitae augue in sollicitudin. Curabitur a lectus dolor.
-</p>
-
 ```
 SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA  
 FROM EMPRESAS  
@@ -186,11 +182,54 @@ JOIN SUMINISTROS S USING(CIF)
 JOIN PIEZAS W USING(MODELO,TIPO);  
   ```
 
-## <h2 align="left"><strong>CONSULTA <em>SELECT WHERE</em></strong></h2>
+<p align="justify">
+  Este código se utiliza para realizar una consulta en la base de datos. La consulta busca seleccionar los nombres, localidades, tipos, modelos y precios de compra de las empresas que han adquirido suministros y de las piezas que han utilizado dichas empresas.
+</p>
 
 <p align="justify">
-    Cras congue velit viverra ultricies elementum. Duis vel lacus id libero vulputate vehicula eu a ligula. Nam interdum dolor id tellus sodales, in pretium nunc vestibulum. Pellentesque vel feugiat leo. Sed et tincidunt leo, at sagittis urna. Nam vel tellus metus. Aliquam aliquet, sapien eu posuere laoreet, massa lacus pharetra tellus, non varius neque urna eget ipsum. Aliquam sed pharetra dolor. Fusce rhoncus massa quis sapien aliquam, sed elementum diam faucibus. Donec convallis risus quis est varius vulputate. Vestibulum quis erat tempus, efficitur dolor eu, facilisis erat. Maecenas ultrices vulputate arcu, sit amet viverra augue volutpat ac. Proin a egestas quam. Praesent a erat eget nunc aliquam bibendum id at orci.
+  La consulta está formada por tres instrucciones JOIN que unen tres tablas diferentes de la base de datos: EMPRESAS, SUMINISTROS y PIEZAS.
 </p>
+
+<p align="justify">
+  La primera instrucción JOIN se utiliza para unir la tabla EMPRESAS con la tabla SUMINISTROS. La sintaxis es la siguiente:
+</p>
+
+```
+JOIN SUMINISTROS S USING(CIF); 
+  ```
+
+<p align="justify">
+  Esto significa que se unen las dos tablas mediante la columna "CIF" de la tabla EMPRESAS y la columna "CIF" de la tabla SUMINISTROS. La palabra clave "USING" se utiliza para especificar las columnas que se utilizan para unir las dos tablas. En este caso, se utiliza "CIF" porque es la columna que tienen en común.
+</p>
+
+<p align="justify">
+  La segunda instrucción JOIN se utiliza para unir la tabla SUMINISTROS con la tabla PIEZAS. La sintaxis es la siguiente:
+</p>
+
+```
+JOIN PIEZAS W USING(MODELO,TIPO); 
+  ```
+
+<p align="justify">
+Esto significa que se unen las dos tablas mediante las columnas "MODELO" y "TIPO". La palabra clave "USING" se utiliza de nuevo para especificar las columnas que se utilizan para unir las dos tablas.
+</p>
+
+<p align="justify">
+  La última parte de la consulta es la siguiente:
+</p>
+
+```
+SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA; 
+  ```
+<p align="justify">
+  Esto significa que se seleccionan las columnas "NOMBRE", "LOCALIDAD", "TIPO", "MODELO" y "PRECIO_COMPRA" de las tres tablas unidas.
+</p>
+
+<p align="justify">
+  En resumen, esta consulta SQL vincula las tablas "EMPRESAS", "SUMINISTROS" y "PIEZAS" utilizando las claves externas e internas apropiadas, y selecciona información específica de estas tablas. La consulta devuelve un conjunto de resultados que incluye los nombres de las empresas, la localidad, el tipo y modelo de pieza, y el precio de compra correspondiente.
+</p>
+
+## <h2 align="left"><strong>CONSULTA <em>SELECT WHERE</em></strong></h2>
 
 ```
 SELECT nombre,apellido1,apellido2,telefono  
@@ -198,18 +237,19 @@ FROM alumnos
 WHERE INSTR(telefono,'5',1,2)>0;  
   ```
 
-## <h2 align="left"><strong>LICENCIAS</strong></h2>
+<p align="justify">
+    Cras congue velit viverra ultricies elementum. Duis vel lacus id libero vulputate vehicula eu a ligula. Nam interdum dolor id tellus sodales, in pretium nunc vestibulum. Pellentesque vel feugiat leo. Sed et tincidunt leo, at sagittis urna. Nam vel tellus metus. Aliquam aliquet, sapien eu posuere laoreet, massa lacus pharetra tellus, non varius neque urna eget ipsum. Aliquam sed pharetra dolor. Fusce rhoncus massa quis sapien aliquam, sed elementum diam faucibus. Donec convallis risus quis est varius vulputate. Vestibulum quis erat tempus, efficitur dolor eu, facilisis erat. Maecenas ultrices vulputate arcu, sit amet viverra augue volutpat ac. Proin a egestas quam. Praesent a erat eget nunc aliquam bibendum id at orci.
+</p>
+
+## <h2 align="left"><strong>PERMISOS CÓDIGO</strong></h2>
 
 <p align="left">
-    <a href="https://www.netacad.com/" target="blank">
-    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/NetworkingAcademy_360px_72_RGB.png" alt="Cisco-Networking-Academy" height="50px" width="50px">
-    </a>
     <a href="https://academy.oracle.com/es/" target="blank">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/descarga.png" alt="Oracle-Academy" height="34%" width="34%">
   </a>
 </p>
 
-### <h3 align="left"><strong>👇¡RRSS DonBosco!</strong></h3>
+### <h3 align="left"><strong>👇¡INSTAGRAM Centro Don Bosco!</strong></h3>
 
 <a href="https://www.instagram.com/salesianosvillamuriel/?hl=es" target="blank" style='margin-right:4px'>
   <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/instagram.svg" alt="donbosco" height="28px" width="28px" />
