@@ -96,11 +96,36 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
   ```
 
 <p align="justify">
-    Vestibulum vitae lorem elementum, commodo risus quis, posuere arcu. Suspendisse imperdiet est at erat elementum, vitae laoreet erat consequat. Quisque hendrerit, erat nec porta scelerisque, risus neque tristique lorem, eu molestie mi magna sit amet tortor. Maecenas eget sodales dui. Nullam dapibus, augue vel varius gravida, nunc felis iaculis mi, vel vehicula libero sem quis velit. Ut magna erat, iaculis vitae ligula porta, laoreet faucibus magna. Aliquam erat volutpat. Aenean vel massa accumsan sem iaculis elementum et eget mi. Cras dictum sem mi, in mollis neque placerat non. Fusce ac orci ac nunc tristique tristique iaculis in lectus. In volutpat sollicitudin quam vel sagittis.
+  Este código se utiliza para insertar datos en la tabla "TIPOS_CURSO" de nuestra base de datos.
+
 </p>
 
 <p align="justify">
+  Cada instrucción "INSERT INTO" introduce una fila en la tabla "TIPOS_CURSO" con valores específicos para cada columna.
+</p>
+
+<p align="justify">
+  La primera instrucción "INSERT INTO" introduce una fila en la tabla "TIPOS_CURSO" con los siguientes valores:
+</p>
+
+* El valor "INFOR031" se inserta en la columna "COD_CURSO".
+* El valor "Linux II" se inserta en la columna "TITULO".
+* El valor 90 se inserta en la columna "DURACION".
+* El valor null se inserta en las columnas "TEMARIO" y "MATERIAS".
+
+``` 
+INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('INFOR031', 'Linux II', 90, null, null);  
+```
+
+<p align="justify">
   Hola Mundo.
+</p>
+
+<p align="left">
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
 </p>
 
 <p align="justify">
@@ -108,10 +133,10 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 </p>
 
 <p align="left">
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
 </p>
 
 <p align="justify">
@@ -119,10 +144,10 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 </p>
 
 <p align="left">
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
 </p>
 
 <p align="justify">
@@ -130,32 +155,10 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 </p>
 
 <p align="left">
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
-</p>
-
-<p align="justify">
-  Hola Mundo.
-</p>
-
-<p align="left">
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
-</p>
-
-<p align="justify">
-  Hola Mundo.
-</p>
-
-<p align="left">
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
-  * Hola Mundo.  
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
+  * Hola Mundo.
 </p>
 
 <p align="justify">
@@ -187,12 +190,9 @@ FROM alumnos
 WHERE INSTR(telefono,'5',1,2)>0;  
   ```
 
-## <h2 align="left"><strong>LICENCIAS</strong></h2>
+## <h2 align="left"><strong>PERMISOS CÓDIGO</strong></h2>
 
 <p align="left">
-    <a href="https://www.netacad.com/" target="blank">
-    <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/NetworkingAcademy_360px_72_RGB.png" alt="Cisco-Networking-Academy" height="50px" width="50px">
-    </a>
     <a href="https://academy.oracle.com/es/" target="blank">
     <img src="https://github.com/Alvaruky/Resumen-Consultas/blob/main/assets/img/descarga.png" alt="Oracle-Academy" height="34%" width="34%">
   </a>
