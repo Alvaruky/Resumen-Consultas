@@ -7,6 +7,33 @@
 
 # <h1 align="center"><strong>RESUMEN CONSULTAS</strong></h1>
 
+## <h2 align="left"><strong>RESUMEN</strong></h2>
+
+<p align="justify">
+  SQL (Structured Query Language) es un lenguaje de programación utilizado para administrar y manipular datos en bases de datos relacionales. Se utiliza para realizar consultas, actualizaciones y eliminaciones de datos, así como para crear y modificar la estructura de las bases de datos.
+</p>
+
+<p align="justify">
+  Las consultas SQL son instrucciones que se utilizan para recuperar datos específicos de una base de datos. Hay varios tipos de consultas básicas y avanzadas que se pueden utilizar en SQL:
+</p>
+
+#### <h4 align="left"><strong>CONSULTAS BÁSICAS</strong></h4>
+
+* <strong>SELECT:</strong> esta consulta se utiliza para seleccionar datos específicos de una tabla o varias tablas. La sintaxis básica de SELECT es: SELECT columnas    FROM tabla.
+* <strong>WHERE:</strong> esta consulta se utiliza para filtrar los datos según una condición específica. La sintaxis básica de WHERE es: WHERE condición.
+* <strong>ORDER BY:</strong> esta consulta se utiliza para ordenar los resultados en orden ascendente o descendente según una o varias columnas. La sintaxis básica de ORDER BY es: ORDER BY columnas ASC/DESC.
+
+#### <h4 align="left"><strong>CONSULTAS AVANZADAS</strong></h4>
+
+* <strong>JOIN:</strong> esta consulta se utiliza para combinar datos de dos o más tablas. Hay varios tipos de JOIN, incluyendo INNER JOIN, LEFT JOIN, RIGHT JOIN y FULL OUTER JOIN.
+* <strong>GROUP BY:</strong> esta consulta se utiliza para agrupar los datos según una o varias columnas y realizar operaciones de agregación en los grupos resultantes, como SUM, AVG o COUNT. La sintaxis básica de GROUP BY es: GROUP BY columnas.
+* <strong>HAVING:</strong> esta consulta se utiliza para filtrar los grupos resultantes de la consulta GROUP BY según una condición específica. La sintaxis básica de HAVING es: HAVING condición.
+* <strong>UNION:</strong> esta consulta se utiliza para combinar los resultados de dos o más consultas SELECT en una sola tabla. La sintaxis básica de UNION es: SELECT columnas FROM tabla1 UNION SELECT columnas FROM tabla2.
+
+<p align="justify">
+  En resumen, SQL es un lenguaje de programación utilizado para administrar y manipular datos en bases de datos relacionales. Las consultas SQL se utilizan para recuperar datos específicos de una base de datos, y hay varios tipos de consultas básicas y avanzadas que se pueden utilizar. Las consultas básicas incluyen SELECT, WHERE y ORDER BY, mientras que las consultas avanzadas incluyen JOIN, GROUP BY, HAVING y UNION.
+</p>
+
 ## <h2 align="left"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
 
 ```
