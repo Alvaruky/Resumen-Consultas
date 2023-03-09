@@ -36,7 +36,7 @@
 
 ## <h2 align="left"><strong>CONSULTA <em>CREATE TABLE</em></strong></h2>
 
-```
+```sql
 create table alumnos(
    dni char(9) constraint alumnos_pk primary key,  
    nombre varchar(50) constraint alumnos_nn1 not null,  
@@ -57,7 +57,7 @@ create table alumnos(
   El primer campo que tenemos es el campo que hace referencia al campo del <em>“DNI”</em> el cual hemos definido con un car&aacute;cter de (char) lo que eso significa es que tiene una longitud m&aacute;xima de 9 caracteres. A parte de lo anterior este campo se define como una clave primaria (primary key) de la tabla, por lo cual cada valor que nos permitir&aacute; escribir ser&aacute; un valor &uacute;nico en toda la tabla, esto nos sirve para identificar un valor &uacute;nico en la tabla.
 <p>
 
-```
+```sql
 dni char(9) constraint alumnos_pk primary key;  
 ```
 
@@ -65,7 +65,7 @@ dni char(9) constraint alumnos_pk primary key;
   El segundo campo llamado <em>“nombre”</em>, se declara como una cadena de caracteres como el anterior (varchar) solo que ahora la longitud m&aacute;xima cambia ligeramente a 50 caracteres, a parte de esto este campo se define como no nulo (not null), con lo que este campo es obligatorio siempre que se haga un registro en la base de datos.
 </p>
 
-```
+```sql
 nombre varchar(50) constraint alumnos_nn1 not null;
 ```
 
@@ -73,7 +73,7 @@ nombre varchar(50) constraint alumnos_nn1 not null;
   El tercer y cuarto campo podemos observar que hacen referencia a los apellidos, al <em>“apellido1”</em> y al <em>“apellido2”</em>, estos campos, como los anteriores ya mencionados son declarados como cadenas de caracteres con una longitud m&aacute;xima de 50 caracteres y también se definen como no nulos.
 </p>
 
-```
+```sql
 apellido1 varchar(50) constraint alumnos_nn2 not null,  
 apellido2 varchar(50) constraint alumnos_nn3 not null;
 ```
@@ -82,7 +82,7 @@ apellido2 varchar(50) constraint alumnos_nn3 not null;
   El quinto campo con el nombre de <em>“dirección”</em>, que tambi&eacute;n se declara como otra cadena de caracteres como los anteriores campos con una longitud m&aacute;ima de 50 caracteres, al contrario que los anteriores campos que le suceden este campo no se define como no nulo (not null), esto significa que si que est&aacute; permitido que algunos registros que se realicen en la base de datos no tengan un valor en este campo, en otras palabras, puedes dejar este campo en blanco que no pasar&aacute; nada.
 </p>
 
-```
+```sql
 direccion varchar(50);
 ```
 
@@ -90,7 +90,7 @@ direccion varchar(50);
   En el sexto campo de nuestro c&oacute;digo de SQL aparece el campo llamado como <em>“teléfono”</em> declarado como todos los anteriores como como un car&aacute;cter (char) con una longitud m&aacute;xima de 9 caracteres. Al igual que el campo <em>"dirección"</em>, este campo no se define como no nulo (not null) con lo que tambi&eacute;n te permite dejar este campo sin rellenar.
 </p>
 
-```
+```sql
 telefono char(9);
 ```
 
@@ -98,7 +98,7 @@ telefono char(9);
   En el s&eacute;ptimo campo llamado <em>“edad”</em>, que es declarado con la funci&oacute;n (number) de n&uacute;mero con una longitud m&aacute;xima de 2 caracteres e igual que los dos anteriores campos este campo tambi&eacute;n permite el dejarle en blanco.
 </p>
 
-```
+```sql
 edad number(2);
 ```
 
@@ -106,14 +106,14 @@ edad number(2);
   El octavo y &uacute;ltimo campo es el campo llamado <em>"cif"</em>, que se declara como un car&aacute;cter (char) con una longitud m&aacute;xima de 9 caracteres. Este campo es definido como clave externa (foreign key) y este hace referencia a la tabla <em>"empresas"</em>, lo que significa que cada valor en este campo debe coincidir con un valor ya existente en la tabla de <em>"empresas"</em> de la base de datos. Adem&aacute;s, se especifica la acci&oacute;n a tomar en caso de que se elimine un registro de la tabla <em>"empresas"</em>: en este caso, se establecer&aacute; el valor del campo <em>"cif"</em> en nulo (null) para todos los registros en la tabla <em>"alumnos"</em> que hagan referencia a ese registro eliminado de la base de datos.
 </p>
 
-``` 
+``` sql
 cif char(9) constraint alumnos_fk references empresas  
       on delete set null;  
 ```
 
 ## <h2 align="left"><strong>CONSULTA <em>INSERT INTO</em></strong></h2>
 
-```
+```sql
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('INFOR031', 'Linux II', 90, null, null);  
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('MECAN011', 'Soldadura', 200, null, null);  
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('OFICG001', 'Mecanografía', 30, null, null);  
@@ -139,7 +139,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 * El valor 90 se inserta en la columna <em>"DURACION"</em>.
 * El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
-``` 
+```sql
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('INFOR031', 'Linux II', 90, null, null);  
 ```
 
@@ -152,7 +152,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 * El valor 200 se inserta en la columna <em>"DURACION"</em>.
 * El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
-``` 
+```sql
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('MECAN011', 'Soldadura', 200, null, null);  
 ```
 
@@ -165,7 +165,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 * El valor 30 se inserta en la columna <em>"DURACION"</em>.
 * El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
-``` 
+```sql
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('OFICG001', 'Mecanografía', 30, null, null);  
 ```
 
@@ -178,7 +178,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 * El valor 90 se inserta en la columna <em>"DURACION"</em>.
 * El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
-``` 
+```sql
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR010', 'Introducción a Oracle', 90, null, null); 
 ```
 
@@ -191,7 +191,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 * El valor 110 se inserta en la columna <em>"DURACION"</em>.
 * El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
-``` 
+```sql 
 INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES ('SGBDR011', 'Programación PL/SQL', 110, null, null); 
 ```
 
@@ -201,7 +201,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 
 ## <h2 align="left"><strong>CONSULTA <em>SELECT JOIN</em></strong></h2>
 
-```
+```sql
 SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA  
 FROM EMPRESAS  
 JOIN SUMINISTROS S USING(CIF)  
@@ -220,7 +220,7 @@ JOIN PIEZAS W USING(MODELO,TIPO);
   La primera instrucción <code>JOIN</code> se utiliza para unir la tabla <em>EMPRESAS</em> con la tabla <em>SUMINISTROS</em>. La sintaxis es la siguiente:
 </p>
 
-```
+```sql
 JOIN SUMINISTROS S USING(CIF); 
 ```
 
@@ -232,7 +232,7 @@ JOIN SUMINISTROS S USING(CIF);
   La segunda instrucci&oacute;n <code>JOIN</code> se utiliza para unir la tabla <em>SUMINISTROS</em> con la tabla <em>PIEZAS</em>. La sintaxis es la siguiente:
 </p>
 
-```
+```sql
 JOIN PIEZAS W USING(MODELO,TIPO); 
 ```
 
@@ -244,7 +244,7 @@ Esto significa que se unen las dos tablas mediante las columnas <em>"MODELO"</em
   La &uacute;ltima parte de la consulta es la siguiente:
 </p>
 
-```
+```sql
 SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA; 
 ```
 <p align="justify">
@@ -257,7 +257,7 @@ SELECT NOMBRE, LOCALIDAD, TIPO, MODELO, PRECIO_COMPRA;
 
 ## <h2 align="left"><strong>CONSULTA <em>SELECT WHERE</em></strong></h2>
 
-```
+```sql
 SELECT nombre,apellido1,apellido2,telefono  
 FROM alumnos  
 WHERE INSTR(telefono,'5',1,2)>0;  
@@ -271,7 +271,7 @@ WHERE INSTR(telefono,'5',1,2)>0;
   Veamos con detalle cada parte del c&oacute;digo:
 </p>
 
-```
+```sql
 SELECT nombre,apellido1,apellido2,telefono
 ```
 
@@ -279,7 +279,7 @@ SELECT nombre,apellido1,apellido2,telefono
 Esta es la cl&aacute;usula <code>SELECT</code>, que indica las columnas que queremos recuperar de la tabla <em>"alumnos"</em>. En este caso, se especifica que se desea obtener la columna <em>"nombre", "apellido1", "apellido2"</em> y <em>"telefono"</em>.
 </p>
 
-``` 
+```sql 
 FROM alumnos
 ```
 
@@ -287,7 +287,7 @@ FROM alumnos
   Esta cl&aacute;usula indica la tabla sobre la cual se va a realizar la consulta. En este caso, la tabla es <em>"alumnos"</em>.
 </p>
 
-```
+```sql
 WHERE INSTR(telefono,'5',1,2)>0;  
 ```
 
