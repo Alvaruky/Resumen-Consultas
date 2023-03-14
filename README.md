@@ -106,7 +106,7 @@ edad number(2);
   El octavo y &uacute;ltimo campo es el campo llamado <em>"cif"</em>, que se declara como un car&aacute;cter (char) con una longitud m&aacute;xima de 9 caracteres. Este campo es definido como clave externa (foreign key) y este hace referencia a la tabla <em>"empresas"</em>, lo que significa que cada valor en este campo debe coincidir con un valor ya existente en la tabla de <em>"empresas"</em> de la base de datos. Adem&aacute;s, se especifica la acci&oacute;n a tomar en caso de que se elimine un registro de la tabla <em>"empresas"</em>: en este caso, se establecer&aacute; el valor del campo <em>"cif"</em> en nulo (null) para todos los registros en la tabla <em>"alumnos"</em> que hagan referencia a ese registro eliminado de la base de datos.
 </p>
 
-``` sql
+```sql
 cif char(9) constraint alumnos_fk references empresas  
       on delete set null;  
 ```
@@ -175,7 +175,7 @@ INSERT INTO TIPOS_CURSO (COD_CURSO, TITULO, DURACION, TEMARIO, MATERIAS) VALUES 
 
 * El valor <em>"SGBDR010"</em> se inserta en la columna <em>"COD_CURSO"</em>.
 * El valor <em>"Introducci&oacute;n a Oracle"</em> se inserta en la columna <em>"TITULO"</em>.
-* El valor 90 se inserta en la columna <em>"DURACION"</em>.
+* El valor <code>90</code> se inserta en la columna <em>"DURACION"</em>.
 * El valor null se inserta en las columnas <em>"TEMARIO"</em> y <em>"MATERIAS"</em>.
 
 ```sql
@@ -312,6 +312,12 @@ WHERE INSTR(telefono,'5',1,2)>0;
   En resumen, la consulta SQL busca obtener la lista de nombres, apellidos y tel&eacute;fonos de alumnos cuyos tel&eacute;fonos tengan el n&uacute;mero <em>"5"</em> en la segunda posici&oacute;n.
 </p>
 
+## <h2 align="left">REFLEXI&Oacute;N PERSONAL</h2>
+
+<p align="justify">
+
+</p>
+
 ## <h2 align="left"><strong>PERMISOS C&Oacute;DIGO</strong></h2>
 
 <p align="left">
@@ -320,7 +326,7 @@ WHERE INSTR(telefono,'5',1,2)>0;
   </a>
 </p>
 
-### <h3 align="left"><strong>👇 ¡Instagram Centro Don Bosco!</strong></h3>
+### <h3 align="left"><strong>👇¡Instagram Centro Don Bosco!</strong></h3>
 
 <a href="https://www.instagram.com/salesianosvillamuriel/?hl=es" target="blank" style='margin-right:4px'>
   <img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.13.0/icons/instagram.svg" alt="donbosco" height="28px" width="28px" />
